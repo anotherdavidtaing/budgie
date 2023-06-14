@@ -1,4 +1,4 @@
-module github.com/anotherdavidtaing/budget
+module github.com/anotherdavidtaing/budgie
 
 go 1.18
 
