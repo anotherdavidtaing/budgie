@@ -5,7 +5,6 @@
 package env
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/joho/godotenv"
@@ -24,11 +23,6 @@ func LoadEnv() {
 
 	var s Specification
 	err = envconfig.Process("", &s)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-
-	_, err = fmt.Printf(s.CLERK_API_KEY)
 	if err != nil {
 		log.Fatal(err.Error())
 	}
