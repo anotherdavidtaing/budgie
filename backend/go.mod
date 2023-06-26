@@ -9,6 +9,8 @@ require (
 	github.com/kelseyhightower/envconfig v1.4.0
 )
 
+require github.com/lib/pq v1.10.9 // indirect
+
 require (
 	github.com/go-chi/chi/v5 v5.0.8
 	github.com/go-jose/go-jose/v3 v3.0.0 // indirect
