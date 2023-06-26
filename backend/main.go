@@ -9,11 +9,13 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 
 	"github.com/anotherdavidtaing/budgie/internal/auth"
+	"github.com/anotherdavidtaing/budgie/internal/database"
 	"github.com/anotherdavidtaing/budgie/internal/env"
 )
 
 func main() {
 	env.LoadEnv()
+	database.Connect()
 
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
